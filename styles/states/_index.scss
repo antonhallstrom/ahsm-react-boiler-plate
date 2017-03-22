@@ -1,0 +1,46 @@
+// ----------------------------------------------------------------
+// States
+// ----------------------------------------------------------------
+.is-bold {
+  font-weight: 500;
+}
+
+.is-italic {
+  font-style: italic;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.is-text-center {
+  text-align: center;
+}
+
+.is-text-left {
+  text-align: left;
+}
+
+.is-text-right {
+  text-align: right;
+}
+
+.is-nowrap {
+  white-space: nowrap;
+}
+
+.is-short-60 {
+  max-width: 40ch
+}
+
+.is-short-40 {
+  max-width: 40ch
+}
+
+.is-short-30 {
+  max-width: 30ch
+}
+
+.is-short-15 {
+  max-width: 15ch
+}

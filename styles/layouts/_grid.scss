@@ -1,0 +1,75 @@
+// ----------------------------------------------------------------
+// Grid
+// ----------------------------------------------------------------
+.row {
+  @if $debug-outline {
+    background: rgba(blue, .3);
+  }
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: $default-grid-size;
+  &--fade-in {
+    @extend .row;
+    @include fadeIn($base-duration-animation * 4);
+  }
+}
+
+.col {
+  @include debug;
+  flex: 1;
+  padding: $default-grid-size;
+  &--full {
+    @extend .col;
+    flex: 0 0 100%;
+  }
+  &--half {
+    @extend .col;
+    flex: 0 0 50%;
+  }
+  &--fit {
+    @extend .col;
+  }
+  &--fade-in {
+    @extend .col;
+    @include fadeIn($base-duration-animation * 4);
+  }
+}
+
+@for $i from 1 through $default-grid-columns {
+  .col--#{$i} {
+    @include col-size($i);
+  }
+}
+
+@for $i from 1 through $default-grid-columns {
+  .col--xs-#{$i} {
+    @include display-xs {
+      @include col-size($i);
+    }
+  }
+}
+
+@for $i from 1 through $default-grid-columns {
+  .col--sm-#{$i} {
+    @include display-sm {
+      @include col-size($i);
+    }
+  }
+}
+
+@for $i from 1 through $default-grid-columns {
+  .col--md-#{$i} {
+    @include display-md {
+      @include col-size($i);
+    }
+  }
+}
+
+@for $i from 1 through $default-grid-columns {
+  .col--lg-#{$i} {
+    @include display-lg {
+      @include col-size($i);
+    }
+  }
+}

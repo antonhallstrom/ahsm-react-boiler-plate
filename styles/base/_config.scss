@@ -1,0 +1,21 @@
+// ----------------------------------------------------------------
+// Config
+// ----------------------------------------------------------------
+// Defaults
+$default-font-size: 14px;
+$default-font-family: 'Avenir',
+sans-serif;
+$default-grid-size: 8px;
+$default-grid-columns: 12;
+// Media sizes
+$display-xs: 320px;
+$display-sm: 480px;
+$display-md: 768px;
+$display-lg: 992px;
+// Primary colors
+$primary-font-color: #000;
+// Animation
+$base-duration-animation: .375s;
+// CSS Debugger
+$debug-outline: true;
+

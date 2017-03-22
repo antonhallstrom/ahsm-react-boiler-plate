@@ -1,0 +1,87 @@
+// ----------------------------------------------------------------
+// Typography
+// ----------------------------------------------------------------
+// Display 4
+h1,
+.display-4 {
+  @include typography(112px, 300, 1, -0.04em);
+  color: rgba($primary-font-color, .54);
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+// Display 3
+h2,
+.display-3 {
+  @include typography(56px, 400, 1.35, -0.02em);
+  color: rgba($primary-font-color, .54);
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+// Display 2
+h3,
+.display-2 {
+  @include typography(45px, 400, 48px);
+  color: rgba($primary-font-color, .54);
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+// Display 1
+h4,
+.display-1 {
+  @include typography(34px, 400, 49px);
+  color: rgba($primary-font-color, .54);
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+// Headline
+h5,
+.headline {
+  @include typography(24px, 400, 32px);
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba($primary-font-color, .87);
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+// Title
+h6,
+.title {
+  @include typography(20px, 500, 1, 0.02em);
+  color: rgba($primary-font-color, .87);
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+// Subheading
+.subheading {
+  @include typography(16px, 400, 24px, 0.04em);
+  color: rgba($primary-font-color, .87);
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+// Body
+p,
+.body {
+  @include typography(14px, 400, 24px, 0);
+  color: rgba($primary-font-color, .87);
+  margin-bottom: 16px;
+}
+
+small,
+.caption {
+  @include typography(12px, 400, 1, 0);
+  color: rgba($primary-font-color, .54);
+}
+
+strong {
+  font-weight: 500;
+}
+
+em {
+  font-style: italic;
+}
